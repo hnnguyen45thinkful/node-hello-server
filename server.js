@@ -9,3 +9,5 @@ app.get('/', function(request, response) {
 app.listen(process.env.PORT || 8080, function(){
 	console.log('Server is running at http://localhost:8080');
 });
+
+//Type in node server.js and let it run on gitbash and then type the address http://localhost:8080 on google chrome.
