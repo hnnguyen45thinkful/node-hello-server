@@ -2,7 +2,7 @@
 var express = require('express');
 
 var app = express();
-
+//Example from the node curriculum "Hello World"
 app.get('/', function(request, response) {
     response.send("Hello World");
 });
@@ -25,8 +25,10 @@ app.get('/jedi/:firstname/:lastname', function(request, response) {
 });
 
 app.listen(process.env.PORT || 8080, function(){
-	console.log('Server is running at http://localhost:8080');
+    console.log('Server is running at http://localhost:8080');
 });
+
+exports.app = app;
 
 //Type in node server.js and let it run on gitbash and then type the address http://localhost:8080 on google chrome.
 //test out the website http://localhost:8080/hieu/nguyen/ gives me "Hello World hieu nguyen."
